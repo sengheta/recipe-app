@@ -6,22 +6,12 @@ import RecipeSearchBar from "./components/RecipeSearchBar";
 import SearchResults from "./components/SearchResults";
 import Recipe from "./components/Recipe";
 import { ISearchResult } from "./models/ISearchResult";
+import LandingPage from "./pages/LandingPage";
 
 function App() {
-  const searchResults: ISearchResult[] = [
-    {
-      recipe: {
-        ingredients: ["cheese", "milk", "milk2"],
-        name: "Cheesy Milk",
-        steps: ["add cheese to milk", "add milk cheese mixture to other milk"],
-      },
-    },
-  ];
   return (
     <div className="App">
-      <AddNewRecipeButton />
-      <RecipeSearchBar />
-      <SearchResults searchResults={searchResults} />
+      <LandingPage />
     </div>
   );
 }
