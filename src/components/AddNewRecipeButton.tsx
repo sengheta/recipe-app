@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import React from "react";
 
 function AddNewRecipeButton() {
@@ -5,7 +6,11 @@ function AddNewRecipeButton() {
     alert("Add your recipe");
   }
 
-  return <button onClick={handleClick}>AddNewRecipeButton</button>;
+  return (
+    <Button onClick={handleClick} variant="contained">
+      Add New Recipe Button
+    </Button>
+  );
 }
 
 export default AddNewRecipeButton;

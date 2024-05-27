@@ -1,3 +1,4 @@
+import { Box, Container, Grid } from "@mui/material";
 import AddNewRecipeButton from "../components/AddNewRecipeButton";
 import Recipe from "../components/Recipe";
 import RecipeSearchBar from "../components/RecipeSearchBar";
@@ -33,12 +34,21 @@ export default function LandingPage() {
     },
   ];
   return (
-    <div>
-      <AddNewRecipeButton />
-      <RecipeSearchBar />
-      {topFiveRecent.map((recipe) => (
-        <Recipe recipe={recipe} />
-      ))}
-    </div>
+    <Container>
+      <Box>
+        <AddNewRecipeButton />
+      </Box>
+      <Box>
+        <RecipeSearchBar />
+      </Box>
+
+      <Grid container>
+        {topFiveRecent.map((recipe) => (
+          <Grid item xs={6} sm={3}>
+            <Recipe recipe={recipe} />
+          </Grid>
+        ))}
+      </Grid>
+    </Container>
   );
 }
