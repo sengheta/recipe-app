@@ -21,9 +21,6 @@ export default function NavBar() {
             </Link>
           </Button>
           <Button>
-            <Link to="/AddNewRecipe"> Add New Recipe </Link>{" "}
-          </Button>
-          <Button>
             <Link to="/ViewAllRecipes"> View All Recipes </Link>{" "}
           </Button>
         </ButtonGroup>

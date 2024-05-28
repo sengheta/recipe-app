@@ -1,14 +1,11 @@
 import { Button } from "@mui/material";
 import React from "react";
+import { Link } from "react-router-dom";
 
 function AddNewRecipeButton() {
-  function handleClick() {
-    alert("Add your recipe");
-  }
-
   return (
-    <Button onClick={handleClick} variant="contained">
-      Add New Recipe Button
+    <Button>
+      <Link to="/AddNewRecipe"> Add New Recipe </Link>{" "}
     </Button>
   );
 }
