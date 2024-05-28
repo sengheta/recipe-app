@@ -4,6 +4,7 @@ import Recipe from "../components/Recipe";
 import RecipeSearchBar from "../components/RecipeSearchBar";
 import SearchResults from "../components/SearchResults";
 import { IRecipe } from "../models/IRecipe";
+import NavBar from "../components/NavBar";
 
 export default function LandingPage() {
   const topFiveRecent: IRecipe[] = [
